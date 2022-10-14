@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELEBRITY RESERVATIONS</title>
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
+
+    <!-- CSS STYLES LINK -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION BEGINS -->
+    <header>
+        
+        <div class="logo-section">
+          <img class="logo" src="swan-image.jpg" alt="Logo-image" width="80" height="80">
+          <p class="navigation__name">
+            CELEBRITY<span>RESERVATIONS</span>
+          </p>
+        </div>
+        <div class="navigation">
+          <ul class="navigation-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="reservation.html">RESERVATIONS</a></li>
+          </ul>
+          <img
+          class="hamburger-menu"
+          src="hamburger.jpg"
+          alt=""
+          height="40"
+          width="45"
+        />
+        </div>
+    </header>
+    <!-- HEADER SECTION ENDS -->
+          <!-- MAIN BODY BEGINS -->
+
+      <form name="form1" action="#" id="form">
+        <h1 class="heading">BOOKING REQUEST</h1>
+        
+          <input type="date" name="date" id="date" required>
+
+          <select name="select" id="select" required>
+            <option value="celebrity" selected>Select your celebrity</option>
+            <option value="">Lee Min Ho</option>
+            <option value="">Charlize Theron</option>
+            <option value="">Michele Morrone</option>
+          </select>
+
+          <select name="select" id="select" name="info" required>
+              <option value="price" selected>Please select the event</option>
+              <option value="">Wedding</optiont>
+              <option value="">Cooking</optiont>
+              <option value="">Meet and Greet</optiont>
+              <option value="">Convention</optiont>
+              <option value="">Birthday</optiont>
+              <option value="">Personal appearance</optiont>
+              <option value="">Music performance</optiont>
+          </select>
+
+          <select name="select" id="select" name="info" required>
+              <option value="price" selected>Please select your approximate event budget </option>
+              <option value="">$5,000 or less</optiont>
+              <option value="">$5,000 - $10,000</optiont>
+              <option value="">$10,000 - $20,000</optiont>
+              <option value="">$20,000 - $30,000</optiont>
+              <option value="">$30,000 - $50,000</optiont>
+              <option value="">$50,000 - $100,000</optiont>
+              <option value="">$100,000 - $500,000</optiont>
+              <option value="">$500,000 and above </optiont>
+          </select>
+
+          <input type="text" name="info" placeholder="Event Location" id="location" required>
+          <input type="text" name="info" placeholder="Your Full Name" class="full-name" required>
+          <input type="text" name="info" placeholder="Your Sex" class="sex" required>
+          <br>
+          <label for="text">Extra Information:</label> 
+          <textarea name="extra-information" id="" cols="30" rows="10" class="" required></textarea>
+          <br>
+          <label for="text">15 + 15 = ?</label>
+          <input type="text" class="calculation" name="info" required>
+          <br>
+          <button class="reserve-btn"><a href="">SUBMIT</a></button>
+
+          <div class="error-msg">
+          </div>
+        </form>
+        <div class="user-info">
+        <a href="index.html">
+          <h3>Your Booking Request Has Been Received!</h3>
+          <h5>Go To Home Page and click the Live Chat to process and complete your reservation</h5>
+        </a>
+        </div>
+
+        <h4><a href="#date-input">See Booking Details</a></h4>
+
+        <div class="booking-details" id="date-input">
+            <h1 class="name"></h1>
+        </div>
+          <!-- MAIN BODY ENDS -->
+
+              <!-- FOOTER BEGINS -->
+    <footer>
+      <div class="footer">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <div class="footer__info">
+          <p>Celebrity Reservation</p>
+          <p>All Rights Reserved 2021</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FOOTER ENDS -->
+
+ <script src="app.js"></script>         
+</body>
+</html>
